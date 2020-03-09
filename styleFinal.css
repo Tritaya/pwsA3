@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana;
+  background-color: #F6F2F2;
+}
+
+.flex_wrap_center_center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: black;
+  min-height: 89px;
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+  /* background-color: green; */
+  padding: 0 15px;
+  height: 89px;
+  line-height: 89px;
+  /* trick height = line-height */
+  text-transform: uppercase;
+  font-size: 14px;
+  display: inline-block;
+  min-width: 92px;
+  /* это можно сделать когда навигация стэком */
+  text-align: center;
+}
+
+.header-nav-ul {
+  list-style: none;
+  margin: 0;
+  padding-inline-start: 0;
+  /* height: 89px; */
+  /* background-color: grey; */
+}
+
+.header-nav-ul-li {
+  display: flex;
+  /* flex: 1 0 160px; */
+  /* min-width: 92px; */
+  /* justify-content: center; */
+  /* width: 92px; */
+  /* height: 89px; */
+  /* поднимает вверх меню */
+  /* border: 4px solid blue; */
+  /* background-color: aquamarine; */
+}
+
+.header-nav a:hover {
+  background-color: tomato;
+}
+
+/* .header-nav li:hover {background-color: tomato;} */
+/* cf. */
+
+.intro {
+  /* flex-wrap: nowrap;
+  flex-shrink: 1;
+  flex-grow: 0;
+  flex-basis: 500px; */
+}
+
+.intro-box, .intro>a {
+  width: 50%;
+  /* min-width: 400px; */
+}
+
+.intro-box {
+  padding: 0 15px;
+  /* background-color: green; */
+}
+
+.intro>a {
+  text-align: center;
+}
+
+.button {
+  text-decoration: none;
+  background-color: tomato;
+  color: white;
+  padding: 12px;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+footer {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.5);
+  max-width: 1586px;
+  margin: 0 auto;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 3vw;
+}
+
+
+.invert {
+  filter: invert(1);
+}
+
+/* http://dimox.name/press_footer_bottom_with_css/ */
+/* https://stackoverflow.com/questions/8133877/proportionally-resize-image-based-on-parent-div-size */
